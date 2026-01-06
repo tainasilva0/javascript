@@ -1,2 +1,2 @@
 # javascript
-Exercícios propostos do livro "Lógica de Programação e Algoritmos com JavaScript".
+Exercícios propostos do livro "Lógica de Programação e Algoritmos com JavaScript" - Edécio Fernando Iepsen
