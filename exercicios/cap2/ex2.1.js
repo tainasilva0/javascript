@@ -1,13 +1,12 @@
-// criar referência a elementos //
-
-const frm = document.querySelector("form")
+const formulario = document.getElementById("inNome")
+const botao = document.getElementById("bt")
 const rsp = document.querySelector("h3")
 
-// ação do botão "mostrar" //
+botao.addEventListener('click', clicar)
 
-frm.addEventListener("submit", (e) =>
-{ 
-const nome = frm.elements["inNome"].value
-rsp.innerText = `Seja bem-vindo ao nosso site, ${nome}!`
-e.preventDefault() 
-})
+function clicar(event) {
+    event.preventDefault()
+    const nome = formulario.value
+    rsp.innerText = `Seja bem-vindo, ${nome}!`
+}
+
