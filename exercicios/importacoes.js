@@ -1,0 +1,6 @@
+import "./ex1.1.js"
+import "./ex1.2.js"
+import "./ex1.3.js"
+import "./ex1.4.js"
+import "./ex1.5.js"
+import "./ex1.6.js"
