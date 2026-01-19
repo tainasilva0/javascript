@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLETIM ESCOLAR</title>
+</head>
+<body>
+    <header>
+        <h1>SITUAÇÃO DO ALUNO</h1>
+    </header>
+
+    <main>
+        <p>Insira suas notas para conferir</p>
+    </main>
+
+    <section>
+        <form>
+            <p>Nome do aluno:
+                <input type="text" name="aluno" id="aluno">
+            </p>
+            <p>Primeira nota:
+                <input type="text" name="n1" id="n1">
+            </p>
+            <p>Segunda nota:
+                <input type="text" name="n2" id="n2">
+            </p>
+            <input type="submit" value="Resultado final" onclick="verificar(v)">
+        </form>
+        <h3 id="msg">Sua média é:</h3>
+        <div id="res"></div>
+        <h5>Para obter aprovação, a nota precisa ser igual ou superior a 6.0!</h5>
+    </section>
+
+    <footer>
+        &copy; Adaptação do livro de Edécio Fernando Iepsen | 2026.
+    </footer>
+    <script src="ex.4.1.js"></script>
+</body>
+</html>

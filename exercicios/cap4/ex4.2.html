@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA FITBODY</title>
+</head>
+<body>
+    <header>
+        <h1>Qual o seu IMC?</h1>
+    </header>
+
+    <main>
+        <p>Informe os dados abaixo para saber o seu IMC</p>
+    </main>
+
+    <section>
+        <form>
+            <p>Nome:
+                <input type="text" name="pessoa" id="pessoa" required>
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="fem" required> Feminino
+                <input type="radio" name="sex" id="masc"> Masculino
+            </p>
+            <p>Altura (em cm):
+                <input type="number" name="alt" id="alt" required>
+            </p>
+            <p>Peso (em kg):
+                <input type="number" name="peso" id="peso" required>
+            </p>
+            <input type="submit" value="Calcular" onclick="verificar(v)">
+            <input type="reset" value="Limpar" onclick="resetar(r)">
+        </form>
+        <div id="res"></div>
+        <h5>Caso seu IMC esteja muito abaixo ou muito acima do ideal, recomendamos procurar uma avaliação médica!</h5>
+    </section>
+
+    <footer>
+        &copy; Adaptação do livro de Edécio Fernando Iepsen | 2026.
+    </footer>
+    <script src="ex4.2.js"></script>
+</body>
+</html>

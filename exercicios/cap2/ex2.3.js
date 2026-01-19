@@ -8,7 +8,9 @@ const saida3 = document.querySelector("#resp3")
 // ação do botão "ver promoções" //
 
 formulario.addEventListener("submit", (e) => {
-    const veiculo = formulario.inVeiculo.value
+    e.preventDefault()
+
+    const veiculo = Number(formulario.inVeiculo.value)
     const preco = Number(formulario.inPreco.value)
 
     const entrada = preco * 0.50
@@ -16,7 +18,5 @@ formulario.addEventListener("submit", (e) => {
 
     saida1.innerHTML = `Promoção: ${veiculo}`
     saida2.innerHTML = `Preço com desconto: ${entrada}`
-    saida3.innerHTML = `Preço parcelado em 12x: ${saida} `
-
-    e.preventDefault()
+    saida3.innerHTML = `Preço parcelado em 12x: ${saida} `    
 })
